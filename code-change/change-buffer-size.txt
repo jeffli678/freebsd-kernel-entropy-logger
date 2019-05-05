@@ -1,0 +1,15 @@
+1. https://www.freebsd.org/cgi/man.cgi?loader(8)
+
+/boot/loader.conf
+
+kern.msgbufsize
+		   Sets	the size of the	kernel message buffer.	The default
+		   limit of 64KB is usually sufficient unless large amounts of
+		   trace data need to be collected between opportunities to
+		   examine the buffer or dump it to a file.  Overrides kernel
+		   option MSGBUF_SIZE.
+
+
+2. https://forums.freebsd.org/threads/boot-msgs.69591/
+
+The kernel contains a circular message buffer that has a fixed size. The default (as of FreeBSD 12) is 96 KB. Typically that's enough for roughly 1,000 lines on average. You can change the size using the MSGBUF_SIZE kernel configuration option, although that requires building a new kernel.

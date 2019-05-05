@@ -1,0 +1,6 @@
+{
+    "folders": [{
+        "uri": "sftp://jeff:1@localhost:50022:/usr/src",
+        "name": "freebsd"
+    }]
+}
